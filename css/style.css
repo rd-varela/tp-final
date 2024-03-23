@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #707d74;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+#headerHome{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imgCompu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu nav ul{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.menu nav ul li{
+    list-style: none;
+}
+
+.menu nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menuGeneral {
+    margin-right: 100px;
+}
+
+body{
+    background-color: rgb(247, 236, 218);
+}
+
+h1{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#homeContent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, 25%);
+    margin: 50px 2%;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+#homeContent div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+#homeContent div p{
+    text-align: justify;
+}
+
+footer {
+    background-color: #707d74;
+    padding: 15px 15px;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+footer ul {
+    text-align: right;
+}
+
+footer ul li {
+    display: inline;
+}
+
+.redSocial {
+    width: 40px;
+}
+
+#impuestosContent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, 25%);
+    margin: 100px 20%;
+    column-gap: 30px;
+    row-gap: 100px;
+    align-items: center;
+}
+
+#impuestosContent div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+v
+#impuestosContent div p{
+    text-align: justify;
+}
+
+#tablaEscala{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#tablaEscala table{
+    background-color: white; 
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+
+#tablaEscala table tr td{
+    border: 1px solid black;
+    padding: 6px;
+    width: 250px;
+}
+
+.tablaEscalaNumero{
+    text-align: right;
+}
+
+#imgMonotributo{
+    margin: 50px 80px;
+}
+
+#imgMonotributo img{
+    width: 100%;
+}
+
+#textoMonotributo{
+    margin: 20px 80px;
+}
+
+#textoMonotributo p{
+    text-align: justify;
+}
+
+#formularioContacto{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+#formularioContacto form{
+    font-size: 24px;
+}
+
+#formularioContacto form p{
+	margin: 15px 0px;
+}
+
+.formularioContactoDatos {
+    font-size: 20px;
+}
+
+.offcanvas-body{
+    background-color: #707d74;
+}
+
+#offcanvasNavbar{
+    background-color: #434d46;
+}
+
+.offcanvas-title{
+    color: white;
+}
+
+
+/* version mobile */
+
+@media only screen and (max-width: 1100px){
+
+    .menu nav ul{
+        gap: 20px;
+    }
+
+    .imgCompu{
+        display: none;
+    }
+
+    #homeContent{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+
+    #impuestosContent{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+        margin: 100px 5%;
+    }
+
+    #impuestosContent div img{
+        max-height: 400px;
+    }
+
+    .menuGeneral{
+        margin-right: 90px;
+    }
+
+    .menuGeneral nav ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menuGeneral nav ul li{
+        font-size: 14px;
+    }
+
+    #tablaEscala table{
+        font-size: 16px;
+    }
+
+    #tablaEscala table tr td{
+        width: 150px;
+    }
+
+    #formularioContacto{
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 100px;
+    }
+    
+    #formularioContacto form{
+        font-size: 16px;
+    }
+    
+    .formularioContactoDatos {
+        font-size: 14px;
+    }
+    
+
+}
+
+/* version tablet */
+
+@media only screen and (min-width: 1101px) and (max-width: 1600px){
+    #impuestosContent{
+        margin: 100px 5%;
+    }
+}
