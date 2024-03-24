@@ -52,8 +52,16 @@ header {
     margin-right: 100px;
 }
 
+.menu nav ul li a:hover{
+    color: black;
+}
+
 body{
     background-color: rgb(247, 236, 218);
+}
+
+main{
+    min-height: 100vh;
 }
 
 h1{
@@ -67,7 +75,8 @@ h1{
     grid-template-rows: repeat(3, 25%);
     margin: 50px 2%;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 100px;
+    margin-top: 100px;
 }
 
 #homeContent div img{
@@ -84,8 +93,8 @@ h1{
 footer {
     background-color: #707d74;
     padding: 15px 15px;
-    position: fixed;
-    bottom: 0px;
+    position: absolute;
+    bottom: -150;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -108,7 +117,7 @@ footer ul li {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(3, 25%);
-    margin: 100px 20%;
+    margin: 130px 20% 0px 20%;
     column-gap: 30px;
     row-gap: 100px;
     align-items: center;
@@ -120,8 +129,8 @@ footer ul li {
     object-fit: cover;
     border-radius: 5%;
 }
-v
-#impuestosContent div p{
+
+.impuestosNews{
     text-align: justify;
 }
 
@@ -166,9 +175,9 @@ v
 }
 
 #formularioContacto{
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 #formularioContacto form{
@@ -195,6 +204,10 @@ v
     color: white;
 }
 
+.mobile {
+    display: none;
+}
+
 
 /* version mobile */
 
@@ -202,6 +215,8 @@ v
 
     .menu nav ul{
         gap: 20px;
+        flex-direction: column;
+        margin-right: 20px;
     }
 
     .imgCompu{
@@ -211,29 +226,24 @@ v
     #homeContent{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 200px);
+        row-gap: 50px;
     }
 
     #impuestosContent{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 200px);
-        margin: 100px 5%;
+        margin-top: 150px;
+        margin-left: 5%;
+        margin-right: 5%;
+        row-gap: 130px;
     }
 
     #impuestosContent div img{
         max-height: 400px;
     }
 
-    .menuGeneral{
-        margin-right: 90px;
-    }
-
-    .menuGeneral nav ul{
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .menuGeneral nav ul li{
-        font-size: 14px;
+    .desktop{
+        display: none;
     }
 
     #tablaEscala table{
@@ -245,7 +255,7 @@ v
     }
 
     #formularioContacto{
-        margin-top: 50px;
+        margin-top: 150px;
         margin-left: 10px;
         margin-bottom: 100px;
     }
@@ -258,6 +268,9 @@ v
         font-size: 14px;
     }
     
+    .mobile{
+        display: block;
+    }
 
 }
 
@@ -265,6 +278,7 @@ v
 
 @media only screen and (min-width: 1101px) and (max-width: 1600px){
     #impuestosContent{
-        margin: 100px 5%;
+        margin: 150px 5%;
+        
     }
 }
