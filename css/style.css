@@ -1,305 +1,275 @@
-/* reset */
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-/* estilos de header y navbar */
 
 header {
-    background-color: #707d74;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  background-color: #707d74;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
-#headerHome{
-    display: flex;
-    height: 150px;
-    justify-content: space-between;
+#headerHome {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
 }
 
-.logo img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.imgCompu img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.imgCompu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.menu{
-    display: flex;
-    align-items: center;
+.menu {
+  display: flex;
+  align-items: center;
 }
-
-.menu nav ul{
-    display: flex;
-    gap: 60px;
-    flex-wrap: wrap;
+.menu nav ul {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
 }
-
-.menu nav ul li{
-    list-style: none;
+.menu nav ul li {
+  list-style: none;
 }
-
-.menu nav ul li a{
-    color: white;
-    text-decoration: none;
+.menu nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.menu nav ul li a :hover {
+  color: black;
 }
 
 .menuGeneral {
-    margin-right: 100px;
+  margin-right: 100px;
 }
 
-.menu nav ul li a:hover{
-    color: black;
+body {
+  background-color: rgb(247, 236, 218);
 }
 
-/* estilos generales */
-
-body{
-    background-color: rgb(247, 236, 218);
+main {
+  min-height: 100vh;
 }
 
-main{
-    min-height: 100vh;
+h1 {
+  margin-top: 30px;
+  text-align: center;
 }
 
-h1{
-    margin-top: 30px;
-    text-align: center;
+#homeContent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 25%);
+  margin: 50px 2%;
+  column-gap: 30px;
+  row-gap: 100px;
+  margin-top: 100px;
+}
+#homeContent div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+#homeContent div p {
+  text-align: justify;
 }
 
-/* contenido index */
-
-#homeContent{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(3, 25%);
-    margin: 50px 2%;
-    column-gap: 30px;
-    row-gap: 100px;
-    margin-top: 100px;
+#impuestosContent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 25%);
+  margin: 130px 20% 0px 20%;
+  column-gap: 30px;
+  row-gap: 100px;
+  align-items: center;
+}
+#impuestosContent div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
 }
 
-#homeContent div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5%;
+.impuestosNews {
+  text-align: justify;
 }
 
-#homeContent div p{
-    text-align: justify;
+#tablaEscala {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+#tablaEscala table {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 24px;
+}
+#tablaEscala table tr td {
+  border: 1px solid black;
+  padding: 6px;
+  width: 250px;
 }
 
-/* estilos de impuestos */
-
-#impuestosContent{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(3, 25%);
-    margin: 130px 20% 0px 20%;
-    column-gap: 30px;
-    row-gap: 100px;
-    align-items: center;
+.tablaEscalaNumero {
+  text-align: right;
 }
 
-#impuestosContent div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5%;
+#imgMonotributo {
+  margin: 50px 80px;
+}
+#imgMonotributo #monotributo {
+  width: 100%;
+}
+#imgMonotributo #monotributoResumen {
+  display: none;
 }
 
-.impuestosNews{
-    text-align: justify;
+#textoMonotributo {
+  margin: 20px 80px;
+}
+#textoMonotributo p {
+  text-align: justify;
 }
 
-/* estilos de laboral */
-
-#tablaEscala{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 150px;
+#formularioContacto {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
 }
-
-#tablaEscala table{
-    background-color: white; 
-    border: 1px solid black;
-    font-size: 24px;
+#formularioContacto form {
+  font-size: 24px;
 }
-
-
-#tablaEscala table tr td{
-    border: 1px solid black;
-    padding: 6px;
-    width: 250px;
-}
-
-.tablaEscalaNumero{
-    text-align: right;
-}
-
-/* estilos de monotributo */ 
-
-#imgMonotributo{
-    margin: 50px 80px;
-}
-
-#imgMonotributo img{
-    width: 100%;
-}
-
-#textoMonotributo{
-    margin: 20px 80px;
-}
-
-#textoMonotributo p{
-    text-align: justify;
-}
-
-/* estilos de contacto */
-
-#formularioContacto{
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-#formularioContacto form{
-    font-size: 24px;
-}
-
-#formularioContacto form p{
-	margin: 15px 0px;
+#formularioContacto form p {
+  margin: 15px 0px;
 }
 
 .formularioContactoDatos {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-/* nav bootstrap */
-
-.offcanvas-body{
-    background-color: #707d74;
+.offcanvas-body {
+  background-color: #707d74;
 }
 
-#offcanvasNavbar{
-    background-color: #434d46;
+#offcanvasNavbar {
+  background-color: #434d46;
 }
 
-.offcanvas-title{
-    color: white;
+.offcanvas-title {
+  color: white;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
-
-/* estilos de footer */
 
 footer {
-    background-color: #707d74;
-    padding: 15px 15px;
-    position: absolute;
-    bottom: -150;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+  background-color: #707d74;
+  padding: 15px 15px;
+  position: absolute;
+  bottom: -150;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
-
 footer ul {
-    text-align: right;
+  text-align: right;
 }
-
 footer ul li {
-    display: inline;
+  display: inline;
 }
 
 .redSocial {
-    width: 40px;
+  width: 40px;
 }
 
-
-
-/* version mobile */
-
-@media only screen and (max-width: 1100px){
-
-    .menu nav ul{
-        gap: 20px;
-        flex-direction: column;
-        margin-right: 20px;
-    }
-
-    .imgCompu{
-        display: none;
-    }
-
-    #homeContent{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 200px);
-        row-gap: 50px;
-    }
-
-    #impuestosContent{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 200px);
-        margin-top: 150px;
-        margin-left: 5%;
-        margin-right: 5%;
-        row-gap: 130px;
-    }
-
-    #impuestosContent div img{
-        max-height: 400px;
-    }
-
-    .desktop{
-        display: none;
-    }
-
-    #tablaEscala table{
-        font-size: 16px;
-    }
-
-    #tablaEscala table tr td{
-        width: 150px;
-    }
-
-    #formularioContacto{
-        margin-top: 150px;
-        margin-left: 10px;
-        margin-bottom: 100px;
-    }
-    
-    #formularioContacto form{
-        font-size: 16px;
-    }
-    
-    .formularioContactoDatos {
-        font-size: 14px;
-    }
-    
-    .mobile{
-        display: block;
-    }
-
+@media only screen and (max-width: 819px) {
+  .menu nav ul {
+    gap: 20px;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .imgCompu {
+    display: none;
+  }
+  #homeContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    row-gap: 50px;
+  }
+  #impuestosContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    margin-top: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    row-gap: 130px;
+  }
+  #impuestosContent div img {
+    max-height: 400px;
+  }
+  .desktop {
+    display: none;
+  }
+  #tablaEscala table {
+    font-size: 16px;
+  }
+  #tablaEscala table tr td {
+    width: 150px;
+  }
+  #imgMonotributo #monotributo {
+    display: none;
+  }
+  #imgMonotributo #monotributoResumen {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #formularioContacto {
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+  }
+  #formularioContacto form {
+    font-size: 16px;
+  }
+  .formularioContactoDatos {
+    font-size: 14px;
+  }
+  .mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 1300px) {
+  .menu nav ul {
+    gap: 10px;
+    flex-direction: column;
+  }
+  #impuestosContent {
+    margin: 150px 5%;
+  }
+  #imgMonotributo #monotributo {
+    display: none;
+  }
+  #imgMonotributo #monotributoResumen {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-/* version tablet */
-
-@media only screen and (min-width: 1101px) and (max-width: 1600px){
-    #impuestosContent{
-        margin: 150px 5%;
-        
-    }
-}
+/*# sourceMappingURL=style.css.map */

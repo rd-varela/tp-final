@@ -1,0 +1,9 @@
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin tableGap($columngap, $rowgap){
+    column-gap: $columngap;
+    row-gap: $rowgap;
+}
