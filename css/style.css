@@ -132,7 +132,8 @@ h1 {
   width: 100%;
 }
 #imgMonotributo #monotributoResumen {
-  display: none;
+  visibility: hidden;
+  width: 0%;
 }
 
 #textoMonotributo {
@@ -230,10 +231,11 @@ footer ul li {
     width: 150px;
   }
   #imgMonotributo #monotributo {
-    display: none;
+    visibility: hidden;
+    width: 0%;
   }
   #imgMonotributo #monotributoResumen {
-    display: block;
+    visibility: visible;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -262,13 +264,13 @@ footer ul li {
     margin: 150px 5%;
   }
   #imgMonotributo #monotributo {
-    display: none;
+    visibility: hidden;
+    width: 0%;
   }
   #imgMonotributo #monotributoResumen {
-    display: block;
+    visibility: visible;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 140px;
   }
 }
 
