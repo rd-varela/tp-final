@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DVR Contador</title>
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link de mi css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,14 +19,40 @@
             <img src="img/logo.jpeg" alt="logo">
         </div>
         <div class="menu">
-            <nav>
+            <nav class="desktop">
                 <ul>
+                    <li id="selected"><a href="index.html">INICIO</a></li>
                     <li><a href="pages/impuestos.html">IMPUESTOS</a></li>
                     <li><a href="pages/laboral.html">LABORAL</a></li>
                     <li><a href="pages/monotributo.html">MONOTRIBUTO</a></li>
                     <li><a href="pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
+            <nav class="navbar fixed-top mobile">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                          <a class="nav-link" aria-current="page" href="pages/impuestos.html">Impuestos</a>
+                          <a class="nav-link active" aria-current="page" href="pages/laboral.html">Laboral</a>
+                          <a class="nav-link" aria-current="page" href="pages/monotributo.html">Monotributo</a>
+                          <a class="nav-link" aria-current="page" href="pages/contacto.html">Conctacto</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </div>
         <div class="imgCompu">
             <img src="img/compu2.png" alt="imagenComputadora">
@@ -33,42 +61,64 @@
 
     <main>
         <h1>ACTUALIDADES</h1>
-        <section id="homeContent">
+        <section id="homeColumns">
 
-            <div class="gridImg">
-                <img src="img/cajera.jpg" alt="cajera">
-            </div>
-            <div>
-                <h2>Acuerdo de comercio</h2>
-                <p>Se acordó una SUMA NO REMUNERATIVA DEL 17,6% sobre el básico de Enero 2024 (Básico Diciembre + No remunerativo, incrementado en un 11%), a pagar en los meses de Febrero y Marzo 2024.
-                En los recibos, se abonaran bajo la denominación "Incremento No Remunerativo - Acuerdo Febrero 2024"
-                Adicionales aplicables: PRESENTISMO y ANTIGÜEDAD, los cuales se liquidarán en los recibos como:
-                Acuerdo Febrero 2024 No Remunerativo Presentismo
-                Acuerdo Febrero 2024 No Remunerativo Antigüedad
-                Aplicarán para el cálculo del SAC (Aguinaldo) e indemnizaciones por extinción del contrato laboral. 
-                Aportes y contribuciones aplicables:
-                Obral Social - OSECAC
-                Aportes sindicales y a FAECyS
-                Contribución INACAP
-                </p>
-            </div>
-            <div class="gridImg">
-                <img src="img/enfermeras.jpg" alt="">
-            </div>
-            <div>
-                <h2>Acuerdo de sanidad</h2>
-                <p>La Federación de Asociaciones de Trabajadores de la Sanidad Argentina (FATSA), acordó con la Asociación de Hospitales de Colectividades Particulares sin fines de lucro, un nuevo incremento salarial en el marco de las negociaciones paritarias 2024 para el CCT 103/75.
-                El acuerdo establece una nueva escala salarial para febrero 2024.
-                Para el resto de nuestros convenios asistenciales se resolvió, luego del fracaso de las negociaciones, continuar el día de mañana con la medida de fuerza convocada por nuestra Federación.
-                </p>
-            </div>
-            <div class="gridImg">
-                <img src="img/afip.jpeg" alt="">
-            </div>
-            <div>
-                <h2>Lorem ipsum</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quibusdam accusantium sunt, quae aliquid unde deserunt quidem pariatur nesciunt sint iste voluptatibus doloribus incidunt debitis ipsum, aliquam quo sit itaque?</p>
-            </div>
+            <section id="homeContent">
+                <div class="gridImg">
+                    <img src="img/cajera.jpg" alt="cajera">
+                </div>
+                <div>
+                    <h2>Acuerdo de comercio</h2>
+                    <p>Se acordó una SUMA NO REMUNERATIVA DEL 17,6% sobre el básico de Enero 2024 (Básico Diciembre + No remunerativo, incrementado en un 11%), a pagar en los meses de Febrero y Marzo 2024.
+                    En los recibos, se abonaran bajo la denominación "Incremento No Remunerativo - Acuerdo Febrero 2024"
+                    Adicionales aplicables: PRESENTISMO y ANTIGÜEDAD, los cuales se liquidarán en los recibos como:
+                    Acuerdo Febrero 2024 No Remunerativo Presentismo
+                    Acuerdo Febrero 2024 No Remunerativo Antigüedad
+                    Aplicarán para el cálculo del SAC (Aguinaldo) e indemnizaciones por extinción del contrato laboral. 
+                    Aportes y contribuciones aplicables:
+                    Obral Social - OSECAC
+                    Aportes sindicales y a FAECyS
+                    Contribución INACAP
+                    </p>
+                </div>
+                <div class="gridImg">
+                    <img src="img/enfermeras.jpg" alt="enfermeras sanidad">
+                </div>
+                <div>
+                    <h2>Acuerdo de sanidad</h2>
+                    <p>La Federación de Asociaciones de Trabajadores de la Sanidad Argentina (FATSA), acordó con la Asociación de Hospitales de Colectividades Particulares sin fines de lucro, un nuevo incremento salarial en el marco de las negociaciones paritarias 2024 para el CCT 103/75.
+                    El acuerdo establece una nueva escala salarial para febrero 2024.
+                    Para el resto de nuestros convenios asistenciales se resolvió, luego del fracaso de las negociaciones, continuar el día de mañana con la medida de fuerza convocada por nuestra Federación.
+                    </p>
+                </div>
+                <div class="gridImg">
+                    <img src="img/afip.jpeg" alt="afip">
+                </div>
+                <div>
+                    <h2>Actualizacion del SMVM</h2>
+                    <p>La actualización del salario mínimo tendrá un impacto en el cálculo que se toma para el pago del impuesto a las Ganancias y el monto que el Poder Ejecutivo paga en distintos programas sociales, como el Potenciar Trabajo, que alcanza a más de un millón de personas, y las Becas Progresar. Además, influirá en un cálculo jubilatorio clave. El salario mínimo vital y móvil (SMVM) fue fijado en $180.000 para febrero y $202.800 en marzo. En enero, mientras tanto, el SMVM estuvo fijado en $156.000, por lo que la suba de este mes es del orden del 15% mientras que, entre enero y marzo, trepa al 30 por ciento.</p>
+                </div>
+                <div class="gridImg">
+                    <img src="img/ARBA.jpeg" alt="arba">
+                </div>
+                <div>
+                    <h2>Impuesto al sello</h2>
+                    <p>A través de la RN 9/2024 se amplía el mecanismo de compensación de los saldos deudores y acreedores correspondientes al Impuesto de Sellos, en los casos de actos, contratos u operaciones formalizados mediante instrumentos privados. Asimismo se incorporan al procedimiento digital de demandas de repetición a los créditos provenientes del Impuesto de Sellos correspondiente a actos, contratos u operaciones instrumentados privadamente cuya declaración jurada presentada para la liquidación y pago del impuesto se encuentre anulada.</p>
+                </div>
+
+            </section>
+
+            <section id="homeAds">   
+                <div>   
+                    <a href="https://www.aconpy.com" target="_blank"><img src="img/ad1.gif" alt="publicidad lsd"></a>
+                </div>
+                <div>
+                    <a href="https://www.coca-cola.com/ar/es" target="_blank"><img src="img/ad3.jpg" alt="publicidad perfume"></a>
+                </div>
+                <div>
+                    <a href="https://giesso.com.ar/" target="_blank"><img src="img/ad2.png" alt="publicidad coca-cola"></a>
+                </div>
+            </section>
 
         </section>
 
@@ -91,5 +141,7 @@
             </li>
         </ul>
     </footer>
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

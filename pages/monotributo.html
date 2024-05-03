@@ -19,9 +19,10 @@
         <div class="menu menuGeneral">
             <nav class="desktop">
                 <ul>
+                    <li><a href="../index.html">INICIO</a></li>
                     <li><a href="impuestos.html">IMPUESTOS</a></li>
                     <li><a href="laboral.html">LABORAL</a></li>
-                    <li><a href="monotributo.html">MONOTRIBUTO</a></li>
+                    <li id="selected"><a href="monotributo.html">MONOTRIBUTO</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
@@ -55,10 +56,1356 @@
 
     <main>
         <h1>ESCALA MONOTRIBUTO</h1>
-        <div id="imgMonotributo">
-            <img id="monotributo" src="../img/monotributo.jpeg" alt="monotributo">
-            <img id="monotributoResumen" src="../img/monotributoresumen.jpeg" alt="monotributo resumen">
-        </div>
+        <section id="tablaMonotributo">
+            <table>
+                <tr id="tablaMonotributoHeader">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="2">Impuesto integrado</th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="2">Total</th>
+                </tr>
+                <tr id="tablaMonotributoHeader">
+                    <th>Categ.</th>
+                    <th>Ingresos Brutos</th>
+                    <th>Actividad</th>
+                    <th>Sup Afectada (**)</th>
+                    <th>Energia Electrica Cons Anual</th>
+                    <th>Alquileres Dev. Anual</th>
+                    <th>Precio un. máx para venta de cosas muebles</th>
+                    <th>Locaciones y prestaciones de servicios</th>
+                    <th>Venta de cosas muebles</th>
+                    <th>Aportes al SIPA (***)</th>
+                    <th>Aportes obra social (*****)</th>
+                    <th>Locaciones y prestaciones de Servicios</th>
+                    <th>Venta de cosas muebles</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>$2.108.288,01</td>
+                    <td>No excluida</td>
+                    <td>Hasta 30 m2</td>
+                    <td>Hasta 3330 Kw</td>
+                    <td>$ 485.448,92</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 1.047,86</td>
+                    <td>$ 1.048,86</td>
+                    <td>$ 4.623,27</td>
+                    <td>$ 6.457,26</td>
+                    <td>$ 12.128,39</td>
+                    <td>$ 12.128,39</td>
+                </tr>
+                <tr class="rowColor">
+                    <td>A Exento (****)</td>
+                    <td>$2.108.288,01</td>
+                    <td>No excluida</td>
+                    <td>Hasta 30 m2</td>
+                    <td>Hasta 3330 Kw</td>
+                    <td>$ 485.448,92</td>
+                    <td>$ 180.589,67</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>$ 4.623,27</td>
+                    <td>$ 6.457,26</td>
+                    <td>$ 11.080,53</td>
+                    <td>$ 11.080,53</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>$3.133.941,63</td>
+                    <td>No excluida</td>
+                    <td>Hasta 45 m2</td>
+                    <td>Hasta 5000 Kw</td>
+                    <td>$ 485.448,92</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 2.018,89</td>
+                    <td>$ 2.018,89</td>
+                    <td>$ 5.085,60</td>
+                    <td>$ 6.457,26</td>
+                    <td>$ 13.561,75</td>
+                    <td>$ 13.561,75</td>
+                </tr>
+                <tr class="rowColor">
+                    <td>B Exento (****)</td>
+                    <td>$3.133.941,63</td>
+                    <td>No excluida</td>
+                    <td>Hasta 45 m2</td>
+                    <td>Hasta 5000 Kw</td>
+                    <td>$ 485.448,92</td>
+                    <td>$ 180.589,67</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>$ 5.085,60</td>
+                    <td>$ 6.457,26</td>
+                    <td>$ 11.542,86</td>
+                    <td>$ 11.542,86</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>$4.387.518,23</td>
+                    <td>No excluida</td>
+                    <td>Hasta 60 m2</td>
+                    <td>Hasta 6700 Kw</td>
+                    <td>$ 970.897,79</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 3.452,09</td>
+                    <td>$ 3.190,00</td>
+                    <td>$ 5.594,16</td>
+                    <td>$ 6.457,26</td>
+                    <td>$ 15.503,51</td>
+                    <td>$ 15.241,42</td>
+                </tr>
+                <tr class="rowColor">
+                    <td>D</td>
+                    <td>$5.449.094,55</td>
+                    <td>No excluida</td>
+                    <td>Hasta 85 m2</td>
+                    <td>Hasta 10000 Kw</td>
+                    <td>$ 970.897,79</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 5.671,23</td>
+                    <td>$ 5.239,75</td>
+                    <td>$ 6.153,58</td>
+                    <td>$ 7.673,13</td>
+                    <td>$ 19.497,94</td>
+                    <td>$ 19.066,46</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>$6.416.528,72</td>
+                    <td>No excluida</td>
+                    <td>Hasta 110 m2</td>
+                    <td>Hasta 13000 Kw</td>
+                    <td>$ 1.209.769,40</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 10.787,67</td>
+                    <td>$ 8.368,13</td>
+                    <td>$ 6.768,94</td>
+                    <td>$ 9.389,36</td>
+                    <td>$ 26.945,97</td>
+                    <td>$ 24.526,43</td>
+                </tr>
+                <tr class="rowColor">
+                    <td>F</td>
+                    <td>$8.020.660,90</td>
+                    <td>No excluida</td>
+                    <td>Hasta 150m2</td>
+                    <td>Hasta 16500 Kw</td>
+                    <td>$ 1.213.622,14</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 14.840,88</td>
+                    <td>$ 10.926,38</td>
+                    <td>$ 7.445,83</td>
+                    <td>$ 10.850,90</td>
+                    <td>$ 33.137,61</td>
+                    <td>$ 29.223,11</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>$9.624.793,05</td>
+                    <td>No excluida</td>
+                    <td>Hasta 200 m2</td>
+                    <td>Hasta 20000 Kw</td>
+                    <td>$ 1.456.346,67</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 18.878,58</td>
+                    <td>$ 13.623,24</td>
+                    <td>$ 8.190,41</td>
+                    <td>$ 11.625,96</td>
+                    <td>$ 38.694,95</td>
+                    <td>$ 33.439,61</td>
+                </tr>
+                <tr class="rowColor">
+                    <td>H</td>
+                    <td>$11.916.410,45</td>
+                    <td>No excluida</td>
+                    <td>Hasta 200 m2</td>
+                    <td>Hasta 20000 Kw</td>
+                    <td>$ 1.941.795,53</td>
+                    <td>$ 180.589,67</td>
+                    <td>$ 43.150,91</td>
+                    <td>$ 33.442,08</td>
+                    <td>$ 9.009,45</td>
+                    <td>$ 13.951,15</td>
+                    <td>$ 66.111,51</td>
+                    <td>$ 56.402,68</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>$13.337.213,22</td>
+                    <td>Venta de bs. muebles</td>
+                    <td>Hasta 200 m2</td>
+                    <td>Hasta 20000 Kw</td>
+                    <td>$ 1.941.795,53</td>
+                    <td>$ 180.589,67</td>
+                    <td>-</td>
+                    <td>$ 53.938,71</td>
+                    <td>$ 9.910,39</td>
+                    <td>$ 17.272,86</td>
+                    <td>-</td>
+                    <td>$ 81.121,96</td>
+                </tr>
+                <tr class="rowColor">
+                    <td>J</td>
+                    <td>$15.285.088,04</td>
+                    <td>Venta de bs. muebles</td>
+                    <td>Hasta 200 m2</td>
+                    <td>Hasta 20000 Kw</td>
+                    <td>$ 1.941.795,53</td>
+                    <td>$ 180.589,67</td>
+                    <td>-</td>
+                    <td>$ 63.385,73</td>
+                    <td>$ 10.901,43</td>
+                    <td>$ 19.332,31</td>
+                    <td>-</td>
+                    <td>$ 93.619,47</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>$16.957.968,71</td>
+                    <td>Venta de bs. muebles</td>
+                    <td>Hasta 200 m2</td>
+                    <td>Hasta 20000 Kw</td>
+                    <td>$ 1.941.795,53</td>
+                    <td>$ 180.589,67</td>
+                    <td>-</td>
+                    <td>$ 72.817,31</td>
+                    <td>$ 11.991,57</td>
+                    <td>$ 22.155,77</td>
+                    <td>-</td>
+                    <td>$ 106.964,65</td>
+                </tr>
+
+            </table>
+        </section>
+        <section id="tablaMonotributoMobile">
+            <div>
+                <table>
+                    <tr>
+                        <th>Categoria A</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria A Exento (****)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria B</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria B Exento (****)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria C</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria D</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria E</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria F</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria G</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria H</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria I</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria J</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Categoria K</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Ingresos brutos
+                            </p>
+                            <p>
+                                $ 2.108.288,01
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Actividad
+                            </p>
+                            <p>
+                                No Excluida
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Sup. Afectada
+                            </p>
+                            <p>
+                                Hasta 30 m2
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Energia Elect. Cons. Anual
+                            </p>
+                            <p>
+                                Hasta 3330 Kw
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Alquileres Dev. Anual
+                            </p>
+                            <p>
+                                $ 485.448,92
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Precio max. cosas muebles
+                            </p>
+                            <p>
+                                $ 180.589,67
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total prestaciones servicios
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="tablaMonotributoMobileHeader">
+                                Total vta. cosas muebles
+                            </p>
+                            <p>
+                                $ 12.128,39
+                            </p> 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
         <div id="textoMonotributo">
             <p>
                 Referencias:
